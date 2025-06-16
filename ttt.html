@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+   <title>tic-toc-toe</title>
+   <link rel="stylesheet" href="ttt.css">
+  </head>
+
+  <body>
+    <p class="title">Tic-Toc-Toe</p>
+
+   <div class="box">
+      <div class="topLeft">
+        <button class="inner-box" onclick="checkWin(this, 'topLeftval'),playerMove(this)" ></button>
+      </div>
+      <div class="topMid">
+        <button class="inner-box" onclick="checkWin(this, 'topMidval'),playerMove(this)"></button>
+      </div>
+      <div class="topRight">
+        <button class="inner-box" onclick="checkWin(this, 'topRightval'),playerMove(this)"></button>
+      </div>
+      <div class="midLeft">
+        <button class="inner-box"  onclick="checkWin(this, 'midLeftval'),playerMove(this)"></button>
+      </div>
+      <div class="midMid">
+        <button class="inner-box" onclick="checkWin(this, 'midMidval'),playerMove(this)"></button>
+      </div>
+      <div class="midRight">
+        <button class="inner-box" onclick="checkWin(this, 'midRightval'),playerMove(this)"></button>
+      </div>
+      <div class="bottomLeft">
+        <button class="inner-box" onclick="checkWin(this, 'bottomLeftval'),playerMove(this)"></button>
+      </div>
+       <div class="bottomMid">
+          <button class="inner-box" onclick="checkWin(this, 'bottomMidval'),playerMove(this)"></button>
+      </div>
+      <div class="bottomRight">
+        <button class="inner-box" onclick="checkWin(this, 'bottomRightval'),playerMove(this)"></button>
+      </div> 
+   
+    </div>
+
+    <p class="result js-result"></p>
+    <p class="score js-score"></p>
+
+    <button class="reset-button" onclick="resetGame()">Reset Game</button>
+    <button class="reset-button" onclick="resetScore()">Reset Score</button>
+
+     <script src="ttt.js"> </script>
+  </body>
+</html>
